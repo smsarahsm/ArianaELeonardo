@@ -1,0 +1,248 @@
+@charset "UTF-8"; 
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+
+
+
+:root{
+  --letraDeMao: "Birthstone", mao;
+  --letraDeForma: "Quicksand", forma;
+  --verdeEscuro: #515d16;
+  --verdeClaro: #bbca83;
+  --dourado: #a38131;
+}
+  
+*{
+    font-family: var(--letraDeForma);
+    font-size: auto;
+    box-sizing: border-box;
+ }
+
+img{
+    width: 100%;
+}
+
+body{
+    background-color:white;
+    font-family: var(--letraDeMao);
+}
+
+main{
+    max-width: 800px;
+    min-width: 320px;
+    margin: 0 auto;
+    display:block;
+}
+
+h1{
+    font-size: 70px;
+    font-family: var(--letraDeMao);
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    color: var(--dourado);
+}
+
+#e{
+    font-size: 30px;
+    font-family: var(--letraDeMao);
+    margin: 5px;
+    text-align: center;
+    color: #a38131;
+}
+
+p{
+    font-size: 150%;
+    color: #515d16;
+    align-items: center;
+}
+
+div{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* p#month{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+p#dweeek{
+    margin: 5px;
+    text-decoration-line: overline underline;
+    word-spacing: 5px;
+}
+
+p#day{
+    font-size: 250%;
+    color: hsl(85, 136, 109);
+    margin: 5px;
+}
+
+p#time{
+    margin: 10px;
+    text-decoration-line: overline underline;
+}
+
+p#year{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+} */
+
+p#date{
+    text-align: center;
+}
+ 
+i {
+    color: white;
+    vertical-align: middle;
+    background-color: #8fc29a;
+    border-radius: 100px;
+    margin: 15px;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+.material-symbols-outlined{
+    font-size: 25px;
+    padding: 10px;
+}  
+
+a { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    color: #8fc29a;
+    text-align: center;
+    text-decoration: none;
+    font-size: 90%;
+}
+
+h1#darPresente{
+    font-family: var(--letraDeForma);
+    font-size: 130%;
+    text-align: center;
+    color: #515d16;
+}
+
+h2#darPresente2{
+    font-family: var(--letraDeForma);
+    font-size: 100%;
+    text-align: center;
+    color: #515d16;
+}
+
+div.gallery {
+    border: 1px solid #e2f1e6;
+    background-color: #e2f1e6;
+    display: block;
+    margin-top: 5px;
+    padding:0%;
+    margin: 6px 0;
+  }
+  
+div.gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+div.desc {
+    display: block;
+    text-align: center;
+    font-size: 80%;
+    color: #515d16;
+  }
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+} 
+
+a#voltar{
+    position: absolute;
+    right: 6%;
+    top: 5%;
+    width: 0px;
+    height: 0px;
+    margin: 0px;
+}
+
+i#inicio{
+    margin-bottom: 0;
+}
+
+button{
+    background-color: #515d16;
+    border: #515d16;
+    color: white; 
+    width: 140px;
+    border-radius: 5px;
+    justify-content: center;
+    height: 30px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto; 
+    margin-right: auto; 
+    font-size: 120%;
+  }
+  
+  button:hover {
+    background-color: #8fc29a;
+  }
+
+  ul{
+    color: #515d16;
+    text-align: justify;
+  }
+
+  p#endereço{
+    text-align: center;
+    font-size: 100%;
+    margin: 0%;
+    margin-top: 15px;
+  }
+
+  a#mapa{
+    text-decoration:underline;
+    margin: 0px;
+    font-weight: bold;
+    inline-size:auto
+  }
+
+  p#titulo{
+    text-align: center;
+    font-size: 100%;
+  }
+
+  footer{
+    display: block;
+    position: relative;
+    width: 100%;
+    clear: both;
+  }
+
+
+  section {
+    font-size: 90%;
+    text-align: center;
+    color: #515d16;
+  }
+
+  section>p {
+    font-size: 90%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .responsive {
+      width: 50%;
+    }
+  }
+
+  
