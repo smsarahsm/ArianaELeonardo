@@ -248,9 +248,187 @@ button{
     
   }
 
+  /* Responsividade para tablets */
   @media only screen and (max-width: 768px) {
     .responsive {
       width: 50%;
+    }
+
+    h1 {
+      font-size: 55px;
+    }
+
+    #e {
+      font-size: 25px;
+    }
+
+    a {
+      width: 250px;
+      font-size: 85%;
+    }
+
+    .material-symbols-outlined {
+      font-size: 22px;
+      padding: 8px;
+    }
+
+    i {
+      margin: 12px;
+    }
+
+    section > h2 {
+      font-size: 95%;
+      padding: 0 15px;
+    }
+
+    #chavePix {
+      max-width: 90%;
+      padding: 15px;
+    }
+
+    #voltar {
+      margin: 10px 15px 0 auto;
+    }
+  }
+
+  /* Responsividade para dispositivos móveis */
+  @media only screen and (max-width: 480px) {
+    .responsive {
+      width: 100%;
+      padding: 0 10px;
+    }
+
+    h1 {
+      font-size: 45px;
+      padding: 10px;
+    }
+
+    #e {
+      font-size: 20px;
+    }
+
+    h1#darPresente {
+      font-size: 110%;
+      padding: 0 15px;
+    }
+
+    p {
+      font-size: 95%;
+      padding: 0 10px;
+    }
+
+    p#date {
+      font-size: 100%;
+      padding: 10px;
+    }
+
+    p#titulo {
+      font-size: 90%;
+      padding: 0 15px;
+    }
+
+    p#endereço {
+      font-size: 95%;
+      padding: 0 10px;
+    }
+
+    section {
+      padding: 0 10px;
+    }
+
+    section > h2 {
+      font-size: 85%;
+      padding: 0 10px;
+      line-height: 1.4;
+    }
+
+    section > p {
+      font-size: 95%;
+    }
+
+    .links {
+      flex-direction: column;
+    }
+
+    a {
+      width: 100%;
+      max-width: 280px;
+      font-size: 90%;
+      margin: 5px 0;
+    }
+
+    .material-symbols-outlined {
+      font-size: 20px;
+      padding: 8px;
+    }
+
+    i {
+      margin: 10px;
+    }
+
+    main {
+      padding: 0 10px;
+    }
+
+    ul {
+      padding-left: 25px;
+      font-size: 95%;
+    }
+
+    a#mapa {
+      font-size: 95%;
+      padding: 5px;
+    }
+
+    button {
+      width: 120px;
+      font-size: 100%;
+      height: 35px;
+    }
+
+    div.gallery img {
+      height: 250px;
+    }
+
+    div.gallery img.gift {
+      height: 200px;
+    }
+
+    div.desc {
+      font-size: 90%;
+      padding: 5px;
+    }
+
+    div.desc h3 {
+      font-size: 100%;
+      margin: 5px 0;
+    }
+
+    div.desc p {
+      font-size: 95%;
+      margin: 5px 0;
+    }
+
+    #chavePix {
+      max-width: 95%;
+      padding: 15px 10px;
+      margin: 20px auto;
+    }
+
+    #chavePix p {
+      font-size: 85%;
+      line-height: 1.5;
+      word-break: break-word;
+    }
+
+    #voltar {
+      margin: 8px 10px 0 auto;
+      font-size: 85%;
+    }
+
+    #voltar i#inicio {
+      font-size: 18px;
+      padding: 6px;
     }
   }
 
@@ -267,20 +445,17 @@ button{
 }
 
 header {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  position: relative;
+  display: block;
 }
 
 #voltar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-right: 20px;
-    margin-top: 10px;
-    width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px 20px 0 auto;
+  width: fit-content;
 }
 
 #voltar i#inicio {
