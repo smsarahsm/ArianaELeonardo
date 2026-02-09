@@ -2,15 +2,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Send+Flowers&family=Tangerine:wght@400;700&display=swap" rel="stylesheet');
 
 
 
 :root{
   --letraDeMao: "Birthstone", mao;
   --letraDeForma: "Quicksand", forma;
-  --verdeEscuro: #515d16;
-  --verdeClaro: #bbca83;
-  --dourado: #a38131;
+  --verdeEscuro: #32033e;
+  --verdeClaro: #B39DDB;
+  --dourado: #9d7d3a;
 }
   
 *{
@@ -37,7 +38,7 @@ main{
 
 h1{
     font-size: 70px;
-    font-family: var(--letraDeMao);
+    font-family: "Tangerine", cursive;
     margin: 0px;
     padding: 0px;
     text-align: center;
@@ -46,16 +47,16 @@ h1{
 
 #e{
     font-size: 30px;
-    font-family: var(--letraDeMao);
+    font-family: "Tangerine", cursive;
     margin: 5px;
     text-align: center;
-    color: #a38131;
+    color: var(--dourado);
 }
 
 p{
-    font-size: 150%;
-    color: #515d16;
-    align-items: center;
+    font-size: 100%;
+    color: #9C7EC7; 
+    text-align: center;
 }
 
 div{ 
@@ -95,12 +96,13 @@ p#year{
 
 p#date{
     text-align: center;
+    font-weight: bold;
 }
  
 i {
     color: white;
     vertical-align: middle;
-    background-color: #8fc29a;
+    background-color: #9C7EC7;
     border-radius: 100px;
     margin: 15px;
     flex-direction: column;
@@ -117,7 +119,7 @@ a {
     flex-direction: column;
     align-items: center;
     width: 300px;
-    color: #8fc29a;
+    color: #9772dc;
     text-align: center;
     text-decoration: none;
     font-size: 90%;
@@ -127,14 +129,14 @@ h1#darPresente{
     font-family: var(--letraDeForma);
     font-size: 130%;
     text-align: center;
-    color: #515d16;
+    color: #bb74c7
 }
 
 h2#darPresente2{
     font-family: var(--letraDeForma);
     font-size: 100%;
     text-align: center;
-    color: #515d16;
+    color: #9C7EC7;
 }
 
 div.gallery {
@@ -149,14 +151,22 @@ div.gallery {
 div.gallery img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+div.gallery img.gift {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
   }
   
 div.desc {
     display: block;
     text-align: center;
     font-size: 80%;
-    color: #515d16;
+    color: #9C7EC7;
   }
 
 .responsive {
@@ -165,22 +175,13 @@ div.desc {
     width: 24.99999%;
 } 
 
-a#voltar{
-    position: absolute;
-    right: 6%;
-    top: 5%;
-    width: 0px;
-    height: 0px;
-    margin: 0px;
-}
-
 i#inicio{
     margin-bottom: 0;
 }
 
 button{
-    background-color: #515d16;
-    border: #515d16;
+    background-color: #954ea2;
+    border: #954ea2;
     color: white; 
     width: 140px;
     border-radius: 5px;
@@ -194,11 +195,11 @@ button{
   }
   
   button:hover {
-    background-color: #8fc29a;
+    background-color: #debaed;
   }
 
   ul{
-    color: #515d16;
+    color: #9C7EC7;
     text-align: justify;
   }
 
@@ -232,11 +233,19 @@ button{
   section {
     font-size: 90%;
     text-align: center;
-    color: #515d16;
+    color:#B39DDB;
   }
 
   section>p {
-    font-size: 90%;
+    font-size: 100%;
+    font-weight: bold;
+  }
+
+  section>h2{
+    font-size: 100%;
+    color: #9C7EC7;
+    font-weight: normal;
+    
   }
 
   @media only screen and (max-width: 768px) {
@@ -245,4 +254,73 @@ button{
     }
   }
 
-  
+.gift {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery {
+    width: 100%;
+    overflow: hidden;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#voltar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 10px;
+    width: auto;
+}
+
+#voltar i#inicio {
+    margin: 5px 0 0 0;
+}
+
+main H1 {
+    display: block;
+    margin-left: 0;
+}
+
+#imgTopo {
+    display: block;
+    width: 100%;
+}
+
+#chavePix {
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 400px;
+}
+
+#chavePix p {
+    font-size: 100%;
+    margin-bottom: 15px;
+}
+
+#emailPix {
+    font-weight: bold;
+    color: #954ea2;
+    text-decoration: underline;
+    cursor: pointer;
+    user-select: all;
+    -webkit-user-select: all;
+    -moz-user-select: all;
+}
+
+#emailPix:hover {
+    color: #bb74c7;
+}
+
+
