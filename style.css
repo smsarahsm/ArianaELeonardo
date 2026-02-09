@@ -125,6 +125,16 @@ a {
     font-size: 90%;
 }
 
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+}
+
 h1#darPresente{
     font-family: var(--letraDeForma);
     font-size: 130%;
