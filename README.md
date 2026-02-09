@@ -8,14 +8,12 @@ Este repositório está configurado para ser publicado automaticamente no GitHub
 
 ### Como Ativar o GitHub Pages
 
-Para publicar o site, siga estes passos:
+O workflow está configurado para ativar automaticamente o GitHub Pages na primeira execução. Basta fazer merge desta branch para a branch `main`:
 
-1. Vá para as **Settings** (Configurações) do repositório no GitHub
-2. No menu lateral, clique em **Pages**
-3. Em **Source** (Fonte), selecione:
-   - **Source**: GitHub Actions
-4. Faça merge desta branch (`copilot/publish-to-github-page`) para a branch `main`
-5. O workflow será executado automaticamente e o site será publicado
+1. Faça merge desta branch (`copilot/fix-deploy-error`) para a branch `main`
+2. O workflow será executado automaticamente
+3. O GitHub Pages será ativado automaticamente se ainda não estiver configurado
+4. O site será publicado automaticamente
 
 ### URL do Site
 
